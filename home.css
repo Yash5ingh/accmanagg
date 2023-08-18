@@ -1,0 +1,147 @@
+@import url("global.css");
+
+html,body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    overflow-x: hidden;
+}
+
+#titlewrapper{
+    background-color: var(--bgtitle);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+#titlewrapper h1{
+    padding: 1rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+#logout{
+    color: white;
+    text-decoration: none;
+    background-color: var(--bg);
+    padding: .5rem;
+    border-radius: .3rem;
+    margin: 1rem 3rem;
+    align-self: end;
+    transition: .4s ease-out;
+}
+#logout:hover{
+    background-color: var(--bgadd);
+}
+
+#contentwrapper{
+    width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+#totalwrapper{
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.totals{
+    padding: 1rem;
+    border-radius: 1.5rem;
+    min-width: 7rem;
+    text-align: center;
+}
+
+.totals:nth-child(1){
+    background-color: var(--gr);
+}
+.totals:nth-child(2){
+    background-color: var(--re);
+}
+.totals:nth-child(3){
+    background-color: var(--bl);
+}
+
+#addwrapper{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+#add{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bgadd);
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+#add:hover{
+    cursor: pointer;
+    background-color: var(--bgaddhover);
+}
+
+#list{
+    width: 90%;
+    background-color: var(--bgadd);
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer{
+    background-color: var(--bglist);
+    width: 95%;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.amt{
+    min-width: 7rem;
+    font-size: 1.2rem;
+    border: none;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.profit{
+    background-color: var(--gr);
+}
+.loss{
+    background-color: var(--re);
+}
+.profit:hover{
+    cursor: pointer;
+    background-color: var(--grhover);
+}
+.loss:hover{
+    cursor: pointer;
+    background-color: var(--rehover);
+}
